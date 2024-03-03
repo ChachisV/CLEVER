@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Questrial&display=swap" rel="stylesheet">
     
     
@@ -14,154 +15,323 @@
 </head>
 <body>
     <nav class="navbar">
-        <button id="nav-logo-btn" class="logo-navbar"><img src="/logos/white-text-logo-clever.png" alt="logo-de-clever">
-        </button>
-        <!-- <p>|</p> -->
-        <ul>
-            <li><a href="#"> 631-605-4219</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li class="contact-us-nav"><a href="#">CONTACT US</a></li>
-            <button id="menu-button-navbar" class="menu-button-navbar"><img src="/logos/logo-menu-navbar2.png" alt=""></button>
-            
-        </ul>
-        <!-- <button class="menu-button-navbar"><img src="/logos/logo-menu-navbar2.png" alt=""></button> -->
 
+        <a href="#" id="nav-logo-btn" class="logo-navbar"><img src="logos/white-text-logo-clever.png" alt="logo-de-clever">
+        </a>
+        
+        <ul class="navbar-container">
+            <a class="navbar-item" href="tel:+12393207993" target="_blank"> 631-605-4219</a>
+            <a class="navbar-item" href="#">PORTFOLIO</a>
+            <a class="navbar-item" class="contact-us-nav" href="#">CONTACT US</a>
+            <label for="menu" id="menu-button-navbar" class="menu-button-navbar">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <input type="checkbox" id="menu" class="navbar-input">
+            <div class="menu">
+                <button id="close-menu-button" class="close-menu-button">X</button>
+                <ul>
+                    <a id="home-item" class="home-item" href="#">Home</a>
+                    <a id="what-we-do-item" class="menu-item" href="index.html#what-we-do-section">What we do</a>
+                    <a id="who-are-we-item" class="menu-item" href="index.html#who-are-we-section">Who are we?</a>
+                    <a id="meet-the-broker-item" class="menu-item" href="index.html#meet-the-broker-section">Meet the broker</a>
+                    <a id="how-to-buy-a-home-item" class="menu-item" href="#">How to buy a home</a>
+                    <a id="clients-testimonials-item" class="menu-item" href="#">Client's testimonials</a>
+                    <a id="featured-listings-item" class="menu-item" href="#">Featured listings</a>
+                    <a id="join-us-item" class="menu-item" href="#">Join our Brokerage</a>
+                    <a id="giving-back-item" class="menu-item" href="#">Givin back</a>
+                </ul>
+            </div>
+        </ul>
+      
 
     </nav>
-    <div class="menu-container">
-        <div id="menu" class="menu">
-            <ul>
-                <li><a href="#">What we do</a></li>
-                <li><a href="#">who are we?</a></li>
-                <li><a href="#">Meet the broker</a></li>
-                <li><a href="#">How to buy a home</a></li>
-                <li><a href="#">Client's testimonials</a></li>
-                <li><a href="#">Featured listings</a></li>
-                <li><a href="#">Join our Brokerage</a></li>
-                <li><a href="#">Givin back</a></li>
-            </ul>
-        </div>
-    </div>
+   
+    
 
 
-    <section  class="section intro">
-        <img class="logo-intro" src="/logos/black-text-logo-clever.png" alt="Logo de clever grande">
+    <section  class="section-intro section">
+        <img class="logo-intro" src="logos/black-text-logo-clever.png" alt="Logo de clever grande">
         <p id="slogan" class="slogan">“A clever seller sells their home in a Clever way”</p>
         
     </section>
 
-    <section class="what-we-do-section section2">
+    <section id="what-we-do-section" class="what-we-do-section section2">
 
+        <!-- Logos del fondo -->
         <div class="logo-overlay-top-right">
-            <img src="/logos/top-right-logo-01.png" alt="Logo">
+            <img src="logos/top-right-logo-01.png" alt="Logo">
         </div>
 
         <H1 class="what-we-do-tittle">HOW TO SELL A HOME</H1>
 
-        <div class="section-logo-buttons top-buttons">
+        <div class="section-what-we-do-logo-buttons">
             
-            <div class="section-buttons2">
+            <button id="cash-offer-button" class="section-buttons2">
                 <p>CASH OFFER</p>
-                <img src="/logos/cash-offer-logo.png" alt="logo de cash offer">                
-            </div>
-            <div class="section-buttons2">
+                <img src="logos/cash-offer-logo.png" alt="logo de cash offer">                
+            </button>
+            <button id="terms-button" class="section-buttons2">
                 <p>TERMS</p>
-                <img src="/logos/terms-logo.png" alt="logo de cash offer">                
-            </div>
-            <div class="section-buttons2">
+                <img src="logos/terms-logo.png" alt="logo de cash offer">                
+            </button>
+            <button id="open-market-button" class="section-buttons2">
                 <p>OPEN MARKET</p>
-                <img src="/logos/open-market-logo.png" alt="logo de cash offer">
+                <img src="logos/open-market-logo.png" alt="logo de cash offer">
+                
+            </button>
+                        
+        </div>
+
+        <div id="cash-offer" class="cash-offer modal">
+            <div class="modal-content">
+                <h2>CASH OFFER</h2>
+                <div class="text-picture">
+                    <img class="modal-picture" src="logos/cash-offer-logo.png" alt="">
+                    <p class="modal-text">At our company, we o er a straightforward cash o er option, allowing you to 
+                        sell your property as-is without the need for repairs or concessions. With this 
+                        option, you can bypass selling commissions, ensuring a more favorable 
+                        nancial outcome. Experience the ease of our process with speed and 
+                        convenience, leading to a quick closing. Rest assured, our approach entails 
+                        the lowest risk possible. Additionally, we provide the exibility of optional 
+                        post-closing occupancy to suit your needs.
+                        
+                        </p>
+                    <span class="cash-offer-close close">&times;</span>
+                </div>
                 
             </div>
-            
-            
 
         </div>
+
+        <div id="terms" class="terms modal">
+            <div class="modal-content">
+                <h2>TERMS</h2>
+                <div class="text-picture">
+                    <img class="modal-picture" src="logos/cash-offer-logo.png" alt="">
+                    <p class="modal-text">Consider our terms option for maximizing your pro t potential. With this 
+                        approach, we prioritize securing the highest selling price for your property, 
+                        accompanied by tax savings bene ts. Skip the hassle of appraisals and 
+                        inspections, streamlining the process for a swift closing. Our method ensures 
+                        a secure tie to your investment, allowing you to sell even without equity to 
+                        cover closing costs or commissions. Explore the option of post-closing 
+                        occupancy for added convenience.
+                        
+                        
+                        </p>
+                    <span class="terms-close close">&times;</span>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div id="open-market" class="open-market modal">
+            <div class="modal-content">
+                <h2>OPEN MARKET</h2>
+                <div class="text-picture">
+                    <img class="modal-picture" src="logos/cash-offer-logo.png" alt="">
+                    <p class="modal-text">Embrace the open market advantage with our comprehensive services. 
+                        Through MLS advertising, your property gains maximum exposure to 
+                        potential buyers and agents, increasing the likelihood of securing a favorable 
+                        selling price. Enjoy the bene ts of negotiating expertise and protection 
+                        throughout the process. Our approach prioritizes your preferences, o ering 
+                        optional post-closing occupancy to further tailor the experience to your 
+                        needs.
+                        
+                        
+                        </p>
+                    <span class="open-market-close close">&times;</span>
+                </div>
+                
+            </div>
+
+        </div>
+
+        
         
         
     </section>
 
-    <section class="who-are-we-section section">
+    <section id="who-are-we-section" class="who-are-we-section section">
         
         <!-- Logos del fondo -->
         <div class="logo-overlay-bottom-right">
-            <img src="/logos/bottom-right-logo-01.png" alt="Logo">
+            <img src="logos/bottom-right-logo-01.png" alt="Logo">
         </div>
         <div class="logo-overlay-top-left">
-            <img src="/logos/top-left-logo-01.png" alt="Logo">
+            <img src="logos/top-left-logo-01.png" alt="Logo">
         </div>
-
-
-
-        <div class="section-logo-buttons who-are-we-buttons">
-            <button id="who-are-we-btn" class="section-buttons">
-                <img src="/logos/who-are-we-logo.png" alt="logo de cash offer">
-                <p>WHO ARE WE?</p>
-            </button>
-            <button id="our-mission-btn" class="section-buttons">
-                <img src="/logos/our-mission-logo.png" alt="logo de cash offer">
-                <p>OUR MISSION</p>
-            </button>
-            <button id="our-story-btn" class="section-buttons">
-                <img src="logos/our-story-logo.png" alt="logo de cash offer">
-                <p>OUR STORY</p>
-            </button>
-            
-        </div>
-        <div  class="who-are-we-section-cards who-are-we-card">
-            <button class="who-are-we-close-btn close-button">X</button>
-            <h2 class="section-subtittle">WHO ARE WE</h2>
-            <p class="who-are-we-card-text" > Clever Home Selling is a pioneering real estate brokerage founded by seasoned real estate
-            investors, bringing innovative solutions to Clever sellers. Whether you seek maximum exposure
-            through open market sales, swift transactions via cash offers with quick closings and zero
-            contingencies, or the prospect of truly passive income by selling on favorable terms, our wealth
-            of experience and expertise is dedicated to securing the best results for you. Our approach
-            prioritizes your goals, eliminating the pressure associated with conventional sales methods.</p>
-        </div>
-        <div class="who-are-we-section-cards our-mission-card">
-            <button class="our-mission-close-btn close-button">X</button>
-            <h2 class="section-subtittle">OUR MISSION</h2>
-            <p class="who-are-we-card-text" > Our mission is to elevate our customer's quality of life by providing Clever real estate solutions that maximize profits and foster enduring relationships.</p>
-        </div>
-        <div class="who-are-we-section-cards our-story-card">
-            <button class="our-story-close-btn close-button">X</button>
-            <h2 class="section-subtittle">OUR STORY</h2>
-            <p class="who-are-we-card-text" > Years of service as a real estate agent immersed me in the community during some of life’s
-                most significant moments. These experiences were deeply rewarding. Subsequently, I ventured
-                into the realm of real estate investing, where I discovered clever buying and selling strategies
-                that resolved common seller dilemmas. These strategies not only allowed me to acquire
-                properties cleverly but also provided sellers with solutions that aligned with their plans.
-                Fueled by this revelation and unbridled enthusiasm, our goal became clear: to make these
-                clever strategies accessible to everyone. Whether you aim to fetch the highest market price for
-                your home while saving on the process, the speed and convenience of a cash offer without
-                inspections or contingencies, seek to build passive income through terms-based selling, or the
-                need to sell a property with minimal equity to cover costs, the secrets of clever investors are
-                now within your reach. At Clever Home Selling, we believe a Clever Seller Sells Their Home in a
-                CLEVER WAY</p>
-        </div>
-    </section>
-
-    <section class="next-section section2">
-        <div class="logo-overlay-bottom-left">
-            <img src="/logos/botttom-left.logo-01.png" alt="Logo">
-        </div>
-        <div class="logo-overlay-top-right">
-            <img src="/logos/top-right-logo-01.png" alt="Logo">
-        </div>
-
 
         
-        <img class="logo-intro" src="/logos/black-text-logo-clever.png" alt="Logo de clever grande">
-        <p>“A Clever Seller Sells Their Home in a Clever Way”</p>
-        <img class="logo-intro" src="/logos/black-text-logo-clever.png" alt="Logo de clever grande">
-        <p>“A Clever Seller Sells Their Home in a Clever Way”</p>
+        <H1 class="who-are-we-tittle">INFORMATION ABOUT THE COMPANY</H1>
+
+
+
+        <div class="who-are-we-container">
+            
+            <div class="who-are-we-cards-container">
+                
+                
+                
+
+                <div id="who-we-are-content" class="who-are-we-section-cards who-are-we-card">
+                    <button class="who-are-we-close-btn close-button">X</button>
+                    <h2 class="section-subtittle">WHO ARE WE</h2>
+                    <p class="who-are-we-card-text" > Clever Home Selling is a pioneering real estate brokerage founded by seasoned real estate
+                        investors, bringing innovative solutions to Clever sellers. Whether you seek maximum exposure
+                        through open market sales, swift transactions via cash offers with quick closings and zero
+                        contingencies, or the prospect of truly passive income by selling on favorable terms, our wealth
+                        of experience and expertise is dedicated to securing the best results for you. Our approach
+                        prioritizes your goals, eliminating the pressure associated with conventional sales methods.</p>
+                </div>
+                
+                
+                
+                <div id="our-mission-content" class="who-are-we-section-cards our-mission-card">
+                    <button class="our-mission-close-btn close-button">X</button>
+                    <h2 class="section-subtittle">OUR MISSION</h2>
+                    <p class="who-are-we-card-text" > Our mission is to elevate our customer's quality of life by providing Clever real estate solutions that maximize profits and foster enduring relationships.</p>
+                </div>
+                
+                
+                
+                <div id="our-story-content" class="who-are-we-section-cards our-story-card">
+                    <button class="our-story-close-btn close-button">X</button>
+                    <h2 class="section-subtittle">OUR STORY</h2>
+                    <p class="who-are-we-card-text" > Years of service as a real estate agent immersed me in the community during some of life's
+                            most significant moments. These experiences were deeply rewarding. Subsequently, I ventured
+                            into the realm of real estate investing, where I discovered clever buying and selling strategies
+                            that resolved common seller dilemmas. These strategies not only allowed me to acquire
+                            properties cleverly but also provided sellers with solutions that aligned with their plans.
+                            Fueled by this revelation and unbridled enthusiasm, our goal became clear: to make these
+                            clever strategies accessible to everyone. Whether you aim to fetch the highest market price for
+                            your home while saving on the process, the speed and convenience of a cash offer without
+                            inspections or contingencies, seek to build passive income through terms-based selling, or the
+                            need to sell a property with minimal equity to cover costs, the secrets of clever investors are
+                            now within your reach. At Clever Home Selling, we believe a Clever Seller Sells Their Home in a
+                            CLEVER WAY</p>
+                    
+                </div>
+
+                
+               
+            </div>
+            <div class="section-logo-buttons who-are-we-buttons-container">
+                <span id="who-are-we-btn" class="section-buttons">
+                    <img src="logos/who-are-we-logo.png" alt="logo de cash offer">
+                    <p for="who-are-we-btn">WHO ARE WE?</p>
+                </span>
+                <span id="our-mission-btn"  class="section-buttons">                
+                    <img src="logos/our-mission-logo.png" alt="logo de cash offer">
+                    <p for="our-mission-btn">OUR MISSION</p>
+                </span>
+                <span id="our-story-btn" class="section-buttons">                
+                    <img src="logos/our-story-logo.png" alt="logo de cash offer">
+                    <p for="our-story-btn">OUR STORY</p>
+                </span>
+                
+            </div>    
+        </div>
+   
+
+        
+    </section>
+
+    <section id="meet-the-broker-section" class="meet-the-broker-section section2">
+
+        <!-- Logos del fondo -->
+        <div class="logo-overlay-bottom-left">
+            <img src="logos/botttom-left.logo-01.png" alt="Logo">
+        </div>
+        <div class="logo-overlay-top-right">
+            <img src="logos/top-right-logo-01.png" alt="Logo">
+        </div>
+
+
+        <h1 class="meet-the-broker-tittle">MEET THE BROKER</h1>
+        <div class="meet-the-broker-container">
+            <label for="broker-input" class="broker-picture-container">
+                <div class="broker-picture">
+                    <img src="logos/pexels-dinielle-de-veyra-4195342.webp" alt="">
+                </div>
+                <p class="broker-name">Juan David Chaparro</p>
+                <p class="broker-position">Broker/Founder</p>
+                
+            </label>
+            <input id="broker-input" class="broker-input" type="checkbox">
+                
+            <p class="meet-the-broker-text"> I'm Juan David Chaparro, the Broker Owner at Clever 
+                Home Selling. I've called Naples, Florida, home for the 
+                past two decades. I moved here at the age of 16, 
+                embarking on a career in sales that eventually led me 
+                to the world of real estate. With years of experience 
+                and acquired knowledge, I was prepared to offer Clever 
+                solutions for real estate needs, leading to the birth of
+                 Clever Home Selling. <br><br>
+                 Outside of real estate, I invest my time in sports such 
+                as pickleball, basketball, running, swimming in the Gulf 
+                of Mexico, kickboxing, surfing, and calisthenics. Family, 
+                personal development, and nutrition also hold significant 
+                places in my life. A leisurely stroll in the park with my 
+                family, an enlightening audiobook or podcast, and a 
+                nourishing meal all contribute to my journey toward 
+                becoming the best version of myself, enabling me to 
+                serve my family and community more effectively as a 
+                son, brother, uncle, real estate broker, team leader, and 
+                citizen.
+                 My passion lies in exceeding your expectations through 
+                a Clever approach to real estate</p>
+        </div>
+        
+
+
     </section>
 
     <section class="section">
-        <img class="logo-intro" src="/logos/white-text-logo-clever.png" alt="Logo de clever grande">
+        <img class="logo-intro" src="logos/white-text-logo-clever.png" alt="Logo de clever grande">
         <p>“A Clever Seller Sells Their Home in a Clever Way”</p>
     </section>
 
-    <script src="/index.js"></script>
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <div class="social-media-container">
+    
+                <a href="tel:+12393207993" target="_blank">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p>(239) 320-7993</p>
+                </a>
+                <a href="mailto:cleverhomeselling@gmail.com?Subject=I%20want%20more%20information%20" target="_blank">
+                    <i class="fa-solid fa-square-envelope"></i>
+                    <p>cleverhomeselling@gmail.com</p>                
+                </a>
+                <a href="https://cleverhomeselling.com" target="_blank">
+                    <i class="fa-solid fa-globe"></i>
+                    <p>www.cleverhomeselling.com</p>
+                    
+                </a>
+                <a href="https://www.instagram.com/cleverhomeselling?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    <p>@cleverhomeselling</p>                
+                </a>
+                <a href="https://www.youtube.com/@cleverhomeselling" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                    <p> @cleverhomeselling</p>                
+                </a>
+                <a href="https://maps.app.goo.gl/aqhKf5u1nekQwnMJ8" target="_blank">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>3201 Tamiami Trail N #101 , Naples, FL 34103</p>
+                </a>
+                
+            </div>
+            <div class="logo-container">
+                <img src="logos/black-text-logo-clever.png" alt="logo-de-clever">
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>

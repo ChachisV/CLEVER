@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Questrial&display=swap" rel="stylesheet">   
+    
+    <link rel="stylesheet" href="styles.css">
+  <title>What is Your Home Worth?</title>
+</head>
+<body>
+  <nav class="navbar">
+
+    <a href="index.html" id="nav-logo-btn" class="logo-navbar"><img src="logos/white-text-logo-clever.png" alt="logo-de-clever">
+    </a>
+    
+    <ul class="navbar-container">
+        <a class="navbar-item" href="#"> 631-605-4219</a>
+        <a class="navbar-item" href="#">PORTFOLIO</a>
+        <a class="navbar-item" class="contact-us-nav" href="#">CONTACT US</a>
+        <label for="menu" id="menu-button-navbar" class="menu-button-navbar">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <input type="checkbox" id="menu" class="navbar-input">
+        <div class="menu">
+            <button id="close-menu-button" class="close-menu-button">X</button>
+            <ul>
+                <a id="home-item" class="home-item" href="index.html">Home</a>
+                <a id="what-we-do-item" class="menu-item" href="index.html#what-we-do-section">What we do</a>
+                <a id="who-are-we-item" class="menu-item" href="index.html#who-are-we-section">Who are we?</a>
+                <a id="meet-the-broker-item" class="menu-item" href="index.html#meet-the-broker-section">Meet the broker</a>
+                <a id="how-to-buy-a-home-item" class="menu-item" href="#">How to buy a home</a>
+                <a id="clients-testimonials-item" class="menu-item" href="#">Client's testimonials</a>
+                <a id="featured-listings-item" class="menu-item" href="#">Featured listings</a>
+                <a id="join-us-item" class="menu-item" href="#">Join our Brokerage</a>
+                <a id="giving-back-item" class="menu-item" href="#">Givin back</a>
+            </ul>
+        </div>
+    </ul>
+  
+
+</nav>
+  
+<section class="home-worth section">
+
+  <div class="logo-overlay-top-left">
+    <img src="logos/top-left-logo-01.png" alt="Logo">
+  </div>
+
+
+
+  <div class="home-worth-container">
+    <div class="image-container half">
+      <img src="logos/casa-gra-de.webp" alt="Casa bonita">
+    </div>
+    <div class="form-container half">
+      <h1 class="home-worth-tittle">What is Your Home Worth?</h1>
+      <form class="home-worth-form" action="https://formsubmit.co/javanmot@gmail.com" method="POST">
+        
+        <input placeholder="Address" type="text" id="direccion" name="direccion" required><br>
+        
+        <input placeholder="Name" type="text" id="nombre" name="nombre" required><br>
+        
+        <input placeholder="Phone" type="tel" id="telefono" name="telefono" required><br>
+        
+        <input placeholder="Email" type="email" id="correo" name="correo" required><br><br>
+        <input class="home-worth-button" type="submit" value="Send">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+        <input type="hidden" name="_captcha" value="false">
+      </form>
+    </div>
+    
+
+  </div>
+
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+      
+      <div class="social-media-container">
+
+          <a href="tel:+12393207993" target="_blank">
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>(239) 320-7993</p>
+          </a>
+          <a href="mailto:cleverhomeselling@gmail.com?Subject=I%20want%20more%20information%20" target="_blank">
+              <i class="fa-solid fa-square-envelope"></i>
+              <p>cleverhomeselling@gmail.com</p>                
+          </a>
+          <a href="https://cleverhomeselling.com" target="_blank">
+              <i class="fa-solid fa-globe"></i>
+              <p>www.cleverhomeselling.com</p>
+              
+          </a>
+          <a href="https://www.instagram.com/cleverhomeselling?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+              <p>@cleverhomeselling</p>                
+          </a>
+          <a href="https://www.youtube.com/@cleverhomeselling" target="_blank">
+              <i class="fa-brands fa-youtube"></i>
+              <p> @cleverhomeselling</p>                
+          </a>
+          <a href="https://maps.app.goo.gl/aqhKf5u1nekQwnMJ8" target="_blank">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>3201 Tamiami Trail N #101 , Naples, FL 34103</p>
+          </a>
+          
+      </div>
+      <div class="logo-container">
+          <img src="logos/black-text-logo-clever.png" alt="logo-de-clever">
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+  <script src="index.js"></script>
+</body>
+</html>
