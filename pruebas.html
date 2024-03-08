@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .contenedor {
+  position: relative;
+  overflow: hidden;
+}
+
+.contenedor img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.contenedor:hover img {
+  transform: scale(1.1);
+}
+
+.marca-agua {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: rgba(255, 255, 255, 0.5); /* Color semi-transparente */
+  font-size: 20px;
+  pointer-events: none; /* Para que el texto no interfiera con el hover */
+}
+      </style>
+</head>
+<body>
+  <div class="contenedor">
+    <a href="url_de_tu_pagina_destino">
+      <img src="logos/casa-gra-de.webp" alt="Imagen">
+    </a>
+    <div class="marca-agua">Marca de Agua</div>
+  </div>
+</div>
+</body>
+</html>
