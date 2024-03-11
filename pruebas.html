@@ -1,41 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      .contenedor {
-  position: relative;
-  overflow: hidden;
-}
-
-.contenedor img {
-  width: 100%;
-  transition: transform 0.3s ease;
-}
-
-.contenedor:hover img {
-  transform: scale(1.1);
-}
-
-.marca-agua {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  color: rgba(255, 255, 255, 0.5); /* Color semi-transparente */
-  font-size: 20px;
-  pointer-events: none; /* Para que el texto no interfiera con el hover */
-}
-      </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider con HTML y CSS</title>
+  <link rel="stylesheet" href="pruebas.css">
 </head>
 <body>
-  <div class="contenedor">
-    <a href="url_de_tu_pagina_destino">
-      <img src="logos/casa-gra-de.webp" alt="Imagen">
-    </a>
-    <div class="marca-agua">Marca de Agua</div>
-  </div>
-</div>
+  <body>
+    <div class="testimonials-container">
+      <div class="slider">
+        <input type="radio" name="slider" id="slideOne" checked>
+        <input type="radio" name="slider" id="slideTwo" >
+        <input type="radio" name="slider" id="slideThree" >
+        <input type="radio" name="slider" id="slideFour" >
+
+        <div class="slider-buttons">
+          <label for="slideOne"></label>
+          <label for="slideTwo"></label>
+          <label for="slideThree"></label>
+          <label for="slideFour"></label>
+        </div>
+
+        <div class="testimonials-content">
+          <div class="first-slide slide">
+            <p class="testimonials-text">OMG, we are so blessed to have selected Juan David and his team as our broker to list & 
+              sell our challenging property in FL. From the initial consult through the many showings,
+               negotiations, and contingencies; they met each challenge with alacrity and ingenuity. It just
+               doesn’t get better. We have years of real estate experience in many markets and they are
+               certainly among the most professional, diligent, and resourceful we have ever worked with.
+               Plus, Clever Home Selling donates a portion of its commission to local philanthropic causes
+               too just icing on the cake in our opinion. Please give Juan David and the Clever Home Selling
+               team your most serious consideration</p>
+            <p class="from-text"> Vincent & Jody Facchiano (sellers) <br>
+              8113 Excalibur Cir H6, Naples, FL 34108<br>
+              Vdacch2854@aol.com</p>
+          </div>
+          <div class="second-slide slide">
+            <p class="testimonials-text">Juan David Chaparro and the Clever Home Selling team are the embodiment of
+              professionalism. Their profound knowledge of local real estate, ease of communication, and
+              excellent negotiation skills make them the best broker I've ever had the pleasure of
+              working with. Thank you, Juan and your team, for being the people that you are, making
+              my home purchasing experience the best every step of the way, and truly taking pride in
+              being the best at what you do.
+             </p>
+            <p class="from-text"> Scott Krauss (buyer) <br>
+              2785 Cinnamon Bay Cir, Naples, FL 34108 <br>
+              sakrauss@gmail.com</p>
+          </div>
+          <div class="third-slide slide">
+            <p class="testimonials-text">Juan David was extremely courteous and responsive on all interactions. He provided all the
+              support I could ask for. He understands the market and how to deliver a quick sale. He is a
+              true professional.</p>
+            <p class="from-text"> Christine Flerro (seller) <br>
+              6640 Beach Resort Dr #811, Naples, FL 34114 <br>
+              Cel 631-605-4219 / cfierro658@gmail.com
+             </p>
+          </div>
+          <div class="fourth-slide slide">
+            <p class="testimonials-text">Juan David and his team were amazing! they are truly the best in their career... they were 
+              able to help me every step of the way... If you’re in need of a home or need to sell your home
+               Clever Home Selling is the best one for the job... they will help you every step of the way</p>
+            <p class="from-text"> Jennifer Ramirez (seller) <br>
+              3771 Timberwood Cir, Naples, FL 34105 <br>
+              305-978-8799/jennycali88@gmall.com
+             </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  
+  
 </body>
 </html>
