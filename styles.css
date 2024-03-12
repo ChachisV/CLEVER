@@ -738,7 +738,7 @@ body {
     
 }
 
-.who-are-we-tittle{
+.who-are-we-tittle {
     font-size: 50px;    
     margin-bottom: 50px;
     color: #000000;
@@ -964,7 +964,7 @@ body {
     color: #000000;
     font-size: 20px;
     text-align: justify;
-    max-width: 600px;
+    max-width: 60%;
     margin-bottom: 50px;
     border-radius: 10px;
     transition: clip-path .3s ease;
@@ -987,69 +987,44 @@ body {
 }
 
 
-.footer {
-    background-color: #ffffff; /* Color de fondo del footer */
-    height: 30vh;
-    color: #000000; /* Color del texto */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Alineación del texto */
-    position: relative;
+/* how to buy a home */
+
+.buy-a-home-tittle {
+    font-size: 50px;    
+    margin: 150px 0 50px;
+    color: #000000;
+    text-align: center;
 }
 
-.footer:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5px; /* Grosor de la línea */
-    background: linear-gradient(to right, rgb(255, 123, 0), rgb(255, 208, 0)); /* Gradiente lineal de naranja a amarillo */
-    z-index: 1; /* Asegura que el gradiente esté por encima del contenido */
-    border-radius: 5px; /* Borde redondeado para suavizar el gradiente */
+.buy-a-home-text{
+    max-width: 50%;
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: justify;
 }
 
-.footer-container {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.logo-container img {
-    width: 200px; /* Ancho del logo */
-}
-
-.social-media-container{
+.how-to-buy-container{
     display: flex;
     flex-direction: column;
-    align-items: start;
-    
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 80px;
 }
 
-.social-media-container a{
+.how-to-buy-item{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
-    text-decoration: none;
-    margin-bottom: 10px;
-    transition: all ease 300ms;
 }
 
-.social-media-container a i{
-    font-size: 20px;
-    color: #ff6600; /* Color inicial naranja */
-    background: linear-gradient(90deg, #ff6600, #ffa600); /* Degradado de naranja a amarillo */
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.how-to-buy-icon{
+    font-size: 70px;
+    color: #fa5c00;
 }
 
-.social-media-container a p {
-    color: #000000;
-}
-
-.social-media-container a:hover {
-    scale: 1.1;
-    
+.how-to-buy-text{
+    font-size: 30px;
 }
 
 
@@ -1169,3 +1144,72 @@ body {
   .slider input:nth-child(4):checked ~.testimonials-content{
     left: -300vw;
   }
+
+
+
+.footer {
+    background-color: #ffffff; /* Color de fondo del footer */
+    height: 30vh;
+    color: #000000; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    position: relative;
+}
+
+.footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Grosor de la línea */
+    background: linear-gradient(to right, rgb(255, 123, 0), rgb(255, 208, 0)); /* Gradiente lineal de naranja a amarillo */
+    z-index: 1; /* Asegura que el gradiente esté por encima del contenido */
+    border-radius: 5px; /* Borde redondeado para suavizar el gradiente */
+}
+
+.footer-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 200px; /* Ancho del logo */
+}
+
+.social-media-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+
+.social-media-container a{
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: all ease 300ms;
+}
+
+.social-media-container a i{
+    font-size: 20px;
+    color: #ff6600; /* Color inicial naranja */
+    background: linear-gradient(90deg, #ff6600, #ffa600); /* Degradado de naranja a amarillo */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-media-container a p {
+    color: #000000;
+}
+
+.social-media-container a:hover {
+    scale: 1.1;
+    
+}
+
+
