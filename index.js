@@ -1,6 +1,7 @@
 // Menu inicio
 const closeMenuButton = document.getElementById('close-menu-button')
 const whatWeDoItem = document.getElementById('what-we-do-item')
+const howToSell = document.getElementById('how-to-sell-item')
 const whoAreWeItem = document.getElementById('who-are-we-item')
 const meetTheBrokerItem = document.getElementById('meet-the-broker-item')
 const howToBuyAHomeItem = document.getElementById('how-to-buy-a-home-item')
@@ -27,6 +28,9 @@ whatWeDoItem.addEventListener('click', ()=>{
 whoAreWeItem.addEventListener('click', ()=>{
   navBarInput.checked = false
 })
+howToSell.addEventListener('click', ()=>{
+  navBarInput.checked = false
+})
 meetTheBrokerItem.addEventListener('click', ()=>{
   navBarInput.checked = false
 })
@@ -36,15 +40,15 @@ howToBuyAHomeItem.addEventListener('click', ()=>{
 clientsTestimonialsItem.addEventListener('click', ()=>{
   navBarInput.checked = false
 })
-featuredListingsItem.addEventListener('click', ()=>{
-  navBarInput.checked = false
-})
+// featuredListingsItem.addEventListener('click', ()=>{
+//   navBarInput.checked = false
+// })
 joinUsItemItem.addEventListener('click', ()=>{
   navBarInput.checked = false
 })
-givingBackItem.addEventListener('click', ()=>{
-  navBarInput.checked = false
-})
+// givingBackItem.addEventListener('click', ()=>{
+//   navBarInput.checked = false
+// })
 
 
 
