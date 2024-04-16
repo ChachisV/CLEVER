@@ -1646,13 +1646,13 @@ body {
     }
     
     .testimonials-text {
-        font-size: 18px;
+        font-size: 3vw;
         max-width: 90%;
         margin-bottom: 30px;
     }
     
     .from-text {
-        font-size: 13px;
+        font-size: 2vw;
     }
 
     /* join our brokerage */
@@ -1713,7 +1713,7 @@ body {
     
     
     .image-container img {
-        height: 50vh; 
+        height: 30vh; 
         margin-top: 50px; 
     }
     
@@ -1823,7 +1823,7 @@ body {
     
     .slogan {
         font-family: "Dancing Script", cursive;
-        font-size: 19px; 
+        font-size: 16px; 
         margin-top: 20px; 
     }
 
