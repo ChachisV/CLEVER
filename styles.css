@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Questrial", sans-serif;
+    font-family: "DM Sans", sans-serif;
 
 }
 
@@ -261,39 +261,39 @@ body {
 
 
 .logo-overlay-top-right {
-    position: absolute; /* Establecer posición absoluta para el logo */
-    bottom: 0px; /* Ajustar la distancia desde la parte inferior */
-    left: 0px; /* Ajustar la distancia desde la izquierda */
+    position: absolute; 
+    bottom: 0px; 
+    left: 0px; 
     opacity: 0.3;  
     z-index: -1;     
 }
 
 .logo-overlay-top-left{
-    position: absolute; /* Establecer posición absoluta para el logo */
-    bottom: 0px; /* Ajustar la distancia desde la parte inferior */
-    right: 0px; /* Ajustar la distancia desde la izquierda */
+    position: absolute; 
+    bottom: 0px; 
+    right: 0px; 
     opacity: 0.3;
     z-index: -1;  
 }
 
 .logo-overlay-bottom-right {
-    position: absolute; /* Establecer posición absoluta para el logo */
-    top: 0px; /* Ajustar la distancia desde la parte inferior */
-    left: 0px; /* Ajustar la distancia desde la izquierda */
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
     opacity: 0.3;
     z-index: -1;          
 }
 
 .logo-overlay-bottom-left {
-    position: absolute; /* Establecer posición absoluta para el logo */
-    top: 0px; /* Ajustar la distancia desde la parte inferior */
-    right: 0px; /* Ajustar la distancia desde la izquierda */
+    position: absolute; 
+    top: 0px; 
+    right: 0px; 
     opacity: 0.3;
     z-index: -1;    
 }
 
 .logo-overlay img {
-    width: 300px; /* Ajustar el tamaño del logo */
+    width: 300px; 
     height: auto;
 }
 
@@ -317,7 +317,7 @@ body {
 
 .slogan {
     font-family: "Dancing Script", cursive;
-    font-size: 60px;
+    font-size: 4vw;
     text-align: center;
     margin-top: 50px;
     overflow: hidden;
@@ -350,20 +350,22 @@ body {
 
 
 .what-we-do-tittle{
-    font-size: 50px;
-    
-    letter-spacing: 3px;
+    font-size: 50px;   
+    font-style: italic; 
+    margin-top: 80px;
+    margin-bottom: 50px;
     color: #ff7b00;
     background-image: linear-gradient(to right, #ff6600, #ffa600);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 180px 0 100px;
+    text-align: center;
     
     
 }
 
 .intro-video{
+    display: none;
     z-index: 2;
 }
 
@@ -371,7 +373,9 @@ body {
 /* how to sell a home section */
 
 .how-to-sell-tittle {
-    font-size: 50px;      
+    font-size: 50px;    
+    font-style: italic;
+    font-weight: 800;  
     margin-bottom: 200px;
     color: #ff7b00;
     background-image: linear-gradient(to right, #ff6600, #ffa600);
@@ -559,8 +563,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Fondo semi-transparente */
-    opacity: 0.5; /* Invisible por defecto */
+    background: rgba(0, 0, 0, 0.3); 
+    opacity: 0.5; 
     transition: opacity 0.3s ease;
     display: flex;
     justify-content: center;
@@ -574,7 +578,7 @@ body {
     ;
   }
   .image-overlay:hover {
-    opacity: 1; /* Mostrar overlay al hacer hover */
+    opacity: 1; 
     background: rgba(0, 0, 0, 0.3);
   }
 
@@ -763,7 +767,8 @@ body {
 }
 
 .who-are-we-tittle {
-    font-size: 50px;    
+    font-size: 50px;   
+    font-style: italic; 
     margin-top: 80px;
     margin-bottom: 50px;
     color: #ff7b00;
@@ -931,6 +936,7 @@ body {
 
 .meet-the-broker-tittle{
     font-size: 50px;
+    font-style: italic;
     color: #ff7b00;
     background-image: linear-gradient(to right, #ff6600, #ffa600);
     background-clip: text;
@@ -956,12 +962,13 @@ body {
 
 
 .broker-picture{
+    
     position: relative;
     width: 240px; 
     height: 240px; 
     border-radius: 50%; 
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     transition: .3s ease;
     
     
@@ -974,6 +981,7 @@ body {
 }
 
 .broker-picture img{
+    
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -997,15 +1005,15 @@ body {
 .meet-the-broker-text{
     color: #000000;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
     text-align: justify;
     max-width: 80%;
     margin-bottom: 50px;
     border-radius: 10px;
     transition: clip-path .3s ease;    
     padding: 30px;
-    background-color: #fefefe;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.5); 
+    
+    
     
     
 
@@ -1019,7 +1027,8 @@ body {
 
 .buy-a-home-tittle {
     font-size: 50px;    
-    font-weight: bold;
+    
+    font-style: italic;
     margin: 150px 0 50px;
     color: #ff7b00;
     background-image: linear-gradient(to right, #ff6600, #ffa600);
@@ -1032,17 +1041,16 @@ body {
 
 .buy-a-home-text{
     max-width: 50%;
-    color: #000000;
+    color: #ffffff;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
     text-align: justify;
     max-width: 80%;
-    margin-bottom: 50px;
-    border-radius: 10px;
-    transition: clip-path .3s ease;    
+    margin-bottom: 50px;    
+    
     padding: 30px;
-    background-color: #fefefe;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.5); 
+    
+    
 }
 
 .how-to-buy-container{
@@ -1075,6 +1083,8 @@ body {
 
 .testimonials-tittle{
     font-size: 50px;
+    font-style: italic;
+    
     color: #ff7b00;
     background-image: linear-gradient(to right, #ff6600, #ffa600);
     background-clip: text;
@@ -1089,9 +1099,9 @@ body {
     position: relative;
     width: 100%;
     height: 70vh;
-    background-image: url('logos/cocina-cali.webp'); /* Cambia 'ruta_de_tu_imagen.jpg' por la ruta de tu imagen */
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
-    background-position: top; /* Centra la imagen dentro del contenedor */
+    background-image: url('logos/testimonial.webp'); 
+    background-size: cover; 
+    background-position: center;
     overflow: hidden;
   }
   
@@ -1147,7 +1157,7 @@ body {
   }
   
   .testimonials-text{
-    font-size: 20px;
+    font-size: 23px;
     color: white;
     max-width: 50%;
     text-align: justify;
@@ -1156,6 +1166,7 @@ body {
   }
   
   .from-text{
+    font-size: 15px;
     color: white;
     text-align: left;
     
@@ -1171,7 +1182,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
   }
   
   
@@ -1199,6 +1210,7 @@ body {
 
  .join-us-tittle{
     text-align: center;
+    font-style: italic;
     font-size: 50px;
     margin-top: 100px;
     margin-bottom: 30px;
@@ -1207,6 +1219,18 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+}
+
+.join-us-text{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: justify;
+    max-width: 70%;
+    margin-bottom: 50px;
+    border-radius: 10px;      
+    padding: 30px;
 }
 
 .join-us-container {
@@ -1297,11 +1321,11 @@ body {
 
 
 .footer {
-    background-color: #ffffff; /* Color de fondo del footer */
-    height: 30vh;
-    color: #000000; /* Color del texto */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Alineación del texto */
+    background-color: #ffffff; 
+    height: 80vh;
+    color: #000000; 
+    padding: 20px; 
+    text-align: center; 
     position: relative;
 }
 
@@ -1311,42 +1335,46 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 5px; /* Grosor de la línea */
-    background: linear-gradient(to right, rgb(255, 123, 0), rgb(255, 208, 0)); /* Gradiente lineal de naranja a amarillo */
-    z-index: 1; /* Asegura que el gradiente esté por encima del contenido */
-    border-radius: 5px; /* Borde redondeado para suavizar el gradiente */
+    height: 5px; 
+    background: linear-gradient(to right, rgb(255, 123, 0), rgb(255, 208, 0)); 
+    z-index: 1; 
+    border-radius: 5px; 
 }
 
 .footer-container {
     margin-top: 20px;
+    padding-top: 25px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .logo-container img {
-    width: 200px; /* Ancho del logo */
+    width: 350px; 
 }
 
 .social-media-container{
     display: flex;
     flex-direction: column;
+    
     align-items: start;
     
 }
 
 .social-media-container a{
+    font-size: 30px;
     display: flex;
     gap: 10px;
     text-decoration: none;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     transition: all ease 300ms;
 }
 
 .social-media-container a i{
-    font-size: 20px;
-    color: #ff6600; /* Color inicial naranja */
-    background: linear-gradient(90deg, #ff6600, #ffa600); /* Degradado de naranja a amarillo */
+    font-size:50px;
+    color: #ff6600; 
+    background: linear-gradient(90deg, #ff6600, #ffa600); 
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1354,6 +1382,7 @@ body {
 
 .social-media-container a p {
     color: #000000;
+    margin-top: 5px;
 }
 
 .social-media-container a:hover {
@@ -1362,3 +1391,502 @@ body {
 }
 
 
+/* responsive para dispositivos moviles */
+
+
+@media screen and (max-width: 768px) {
+
+    /* Navbar*/
+
+    .navbar {
+        height: auto;
+        padding: 10px 25px;
+        
+        align-items: flex-start;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        
+        margin-top: 40px;
+    }
+
+    .navbar-item {
+        font-size: 20px;
+        margin: 10px 0;
+        display: none; 
+    }
+
+    .menu {
+        width: 100%;
+        top: 100%;
+        right: 0;
+        padding: 10px 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu a {
+        padding: 10px 20px;
+        height: auto;
+        border-right: none;
+        border-radius: 0;
+    }
+
+    .close-menu-button {
+        margin-left: 0;
+    }
+
+
+
+    /* intro*/
+
+    .section-intro {
+        text-align: center;
+        padding: 50px 20px; 
+    }
+    
+    .logo-intro {
+        max-width: 80%; 
+        height: auto;
+        margin-top: 50px; 
+    }
+    
+    .slogan {
+        font-family: "Dancing Script", cursive;
+        font-size: 30px; 
+        margin-top: 20px; 
+    }
+
+    /* logos de fondo */
+
+    .logo-overlay-bottom-right img,
+    .logo-overlay-top-left img,
+    .logo-overlay-bottom-left img,
+    .logo-overlay-top-right img {
+        max-width: 100px;
+    }
+
+
+
+    /* What we do */
+
+    .what-we-do-tittle {
+        font-size: 30px; 
+        margin-top: 50px; 
+        margin-bottom: 30px; 
+        
+    }
+    
+    .intro-video {
+        display: block;
+            
+        max-width: 800px; 
+        height: auto; 
+        margin-bottom: 30px; 
+        z-index: 2;
+    }
+    .intro-video2 {
+        display: none;
+    }
+
+    /* how to sell */
+
+    .how-to-sell-tittle {
+        font-size: 30px; 
+        margin-bottom: 50px; 
+    }
+    
+    .section-what-we-do-logo-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px; 
+        margin-bottom: 50px; 
+    }
+    
+    .section-what-we-do-logo-buttons img {
+        height: 80px; 
+    }
+
+    .section-buttons2 p {
+        font-size: 20px; 
+        margin-top: 10px;
+    }
+
+    .section-buttons2 img {
+        height: 90px; 
+        margin-right: 10px; 
+    }
+    .modal {
+        position: fixed;
+        z-index: 1100; 
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 150px; 
+    }
+
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        border-radius: 30px; 
+        max-width: 600px; 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+    
+    .modal-content h2 {
+        font-size: 30px; 
+        margin-bottom: 20px;
+    }
+    
+    .text-picture {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px; 
+    }
+    
+    .text-picture img {
+        max-width: 100%; 
+        border-radius: 10px;
+    }
+    
+    .modal-text {
+        font-size: 16px; 
+        text-align: justify;
+    }
+    
+    .close {
+        position: absolute;
+        color: #aaa;
+        right: 20px;
+        top: 20px;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    /* galery*/
+
+    .gallery {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .galery-image-container {
+        width: 90%; 
+        margin: 20px 0; 
+    }
+
+    /* who are we */
+
+    .who-are-we-tittle {
+        font-size: 30px; 
+        margin-bottom: 50px; 
+    }
+
+    .who-are-we-container {
+        flex-direction: column;
+        gap: 30px;
+      }
+    
+      .section-logo-buttons {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+        text-align: center;
+      }
+    
+      .section-logo-buttons img {
+        height: 100px;
+      }
+    
+      .who-are-we-cards-container {
+        align-items: center;
+      }
+    
+      .section-subtittle {
+        margin-left: 0;
+      }
+    
+      .who-are-we-card-text {
+        width: 90%;
+        max-width: unset;
+      }
+
+      /* meet the broker */
+
+      .meet-the-broker-tittle {
+        font-size: 30px; 
+        margin: 10% 10px 5% -10%; 
+    }
+    
+    .broker-picture {
+        width: 30vw; 
+        height: 30vw; 
+        max-width: 240px; 
+        max-height: 240px; 
+        margin-bottom: 5%; 
+    }
+    
+   
+    .broker-name {
+        font-size: 4vw;
+    }
+    
+    .broker-position {
+        font-size: 3vw; 
+    }
+    
+    .meet-the-broker-text {
+        font-size: 3vw; 
+        max-width: 80%; 
+        margin-bottom: 5%; 
+        padding: 3vw; 
+    }
+
+    /* how to buy a home */
+
+    .buy-a-home-tittle {
+        font-size: 30px; 
+        margin: 100px 0 30px; 
+    }
+    
+    .buy-a-home-text {
+        max-width: 90%; 
+        font-size: 3.5vw; 
+        padding: 20px; 
+        margin-bottom: 30px; 
+    }
+    
+    .how-to-buy-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; 
+        margin-bottom: 50px; 
+    }
+    
+    .how-to-buy-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px; 
+    }
+    
+    .how-to-buy-icon {
+        font-size: 50px; 
+        color: #fa5c00;
+    }
+    
+    .how-to-buy-text {
+        font-size: 24px; 
+        color: #fefefe;
+    }
+
+    /* clients testimonials */
+
+    .testimonials-tittle {
+        font-size: 30px;
+        margin: 100px 0 30px;
+    }
+    
+    .testimonials-text {
+        font-size: 18px;
+        max-width: 90%;
+        margin-bottom: 30px;
+    }
+    
+    .from-text {
+        font-size: 13px;
+    }
+
+    /* join our brokerage */
+
+    .join-us-tittle {
+        font-size: 30px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    
+    .join-us-text {
+        font-size: 18px;
+        max-width: 90%;
+        padding: 20px;
+    }
+    
+    .join-us-container {
+        flex-direction: column;
+    }
+    
+    .form-container,
+    .join-us-image-container {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .form-container input {
+        font-size: 16px;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .join-us-button {
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    .half p {
+        font-size: 24px;
+    }
+    
+    .half a {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    
+    .join-us-image-container img {
+        height: auto;
+        width: 100%;
+        max-height: 300px;
+    }
+
+    /* home worth y contact us */
+
+    .home-worth-container {
+        flex-direction: column; 
+    }
+    
+    
+    .image-container img {
+        height: 50vh; 
+        margin-top: 50px; 
+    }
+    
+    
+    .form-container {
+        text-align: center; 
+    }
+    
+    
+    .home-worth-tittle {
+        font-size: 30px; 
+        margin-bottom: 20px; 
+    }
+    
+    .half p {
+        font-size: 20px; 
+        margin-top: 10px; 
+    }
+    
+    
+    .form-container input {
+        font-size: 16px; 
+        padding: 8px; 
+        margin-bottom: 10px; 
+    }
+    
+    .half a {
+        line-height: 30px; 
+        height: 30px; 
+        font-size: 16px; 
+        margin-top: 20px; 
+        width: 40%; 
+    }
+
+
+    /* footer*/
+
+    .footer {
+        background-color: #ffffff; 
+        color: #000000; 
+        padding: 20px; 
+        text-align: center; 
+        position: relative;
+    }
+    
+    .footer:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px; 
+        background: linear-gradient(to right, rgb(255, 123, 0), rgb(255, 208, 0)); 
+        z-index: 1; 
+        border-radius: 5px; 
+    }
+    
+    .footer-container {
+        margin-top: 20px;
+        padding-top: 25px;
+        display: flex;
+        gap: 50px;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+    }
+    
+    .logo-container img {
+        max-width: 80%;
+        margin-bottom: 60px;
+    }
+    
+    .social-media-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+    
+    .social-media-container a{
+        font-size: 20px; 
+        display: flex;
+        gap: 10px;
+        text-decoration: none;
+        margin-bottom: 10px; 
+        transition: all ease 300ms;
+    }
+    
+    .social-media-container a i{
+        font-size: 30px; 
+    }
+    
+    .social-media-container a p {
+        margin-top: 1px;
+    }
+    
+    
+
+}
+
+
+@media screen and (max-width: 590px) {
+    .logo-intro {
+        max-width: 80%; 
+        height: auto;
+        margin-top: 50px; 
+    }
+    
+    .slogan {
+        font-family: "Dancing Script", cursive;
+        font-size: 19px; 
+        margin-top: 20px; 
+    }
+
+
+}
