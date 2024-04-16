@@ -107,86 +107,59 @@ openMarketCloseButton.addEventListener('click', ()=> {
 })
 
 
+// // seccion info about the company
+
+// // botones
+
+const whoAreWeButton =document.getElementById('who-are-we-button')
+const ourMissionButton =document.getElementById('our-mission-button')
+const ourStoryButton =document.getElementById('our-story-button')
+
+const whoAreWeCloseButton = document.querySelector('.who-are-we-close')
+const ourMissionCloseButton = document.querySelector('.our-mission-close')
+const ourStoryCloseButton = document.querySelector('.our-story-close')
 
 
 
-// seccion who are we
+// // ventanas
+
+let whoAreWeModal = document.getElementById('who-are-we-modal')
+let ourMissionModal = document.getElementById('our-mission-modal')
+let ourStoryModal = document.getElementById('our-story-modal')
 
 
-const whoAreWeBtn = document.getElementById('who-are-we-btn')
-const ourMissionBtn = document.getElementById('our-mission-btn')
-const ourStoryBtn = document.getElementById('our-story-btn')
 
+// // Acciones de botones 
 
+// //who are we
 
-const whoAreWeCloseBtn = document.querySelector('.who-are-we-close-btn')
-const ourMissionCloseBtn = document.querySelector('.our-mission-close-btn')
-const ourStoryCloseBtn = document.querySelector('.our-story-close-btn')
-
-
-let whoAreWeText = document.querySelector('.who-are-we-card')
-let ourMissionText = document.querySelector('.our-mission-card')
-let ourStoryText = document.querySelector('.our-story-card')
-let companyInfoLogo = document.querySelector('.who-are-we-clever')
-
-// who are we buttons
-
-whoAreWeBtn.addEventListener('click', ( ) => {
-  whoAreWeText.style.height = 'auto'
-  whoAreWeText.style.clipPath = 'circle(100% at 50% 50%)'
-  ourMissionText.style.height = '0'
-  ourMissionText.style.clipPath = 'circle(0.0% at 50% 50%)'
-  ourStoryText.style.height = '0'
-  ourStoryText.style.clipPath = 'circle(0.0% at 50% 50%)'
-  companyInfoLogo.style.height ='0'
-  companyInfoLogo.style.width = '0'
-  companyInfoLogo.style.overflow = 'hidden'
+whoAreWeButton.addEventListener('click', ()=>{
+  whoAreWeModal.style.display ='block'
 })
 
-ourMissionBtn.addEventListener('click', ()=> {
-  whoAreWeText.style.height = '0'
-  whoAreWeText.style.clipPath = 'circle(0.0% at 50% 50%)';
-  ourMissionText.style.height = 'auto'
-  ourMissionText.style.clipPath = 'circle(100% at 50% 50%)';
-  ourStoryText.style.height = '0'
-  ourStoryText.style.clipPath = 'circle(0.0% at 50% 50%)';
-  
+whoAreWeCloseButton.addEventListener('click', ()=> {
+  whoAreWeModal.style.display ='none'
 })
 
-ourStoryBtn.addEventListener('click', ()=> {
-  whoAreWeText.style.height = '0'
-  whoAreWeText.style.clipPath = 'circle(0.0% at 50% 50%)'; 
-  ourMissionText.style.height = '0' 
-  ourMissionText.style.clipPath = 'circle(0.0% at 50% 50%)';
-  ourStoryText.style.height = 'auto'
-  ourStoryText.style.clipPath = 'circle(100% at 50% 50%)';
-  
+// //our mission
+
+ourMissionButton.addEventListener('click', ()=>{
+  ourMissionModal.style.display ='block'
 })
 
-whoAreWeCloseBtn.addEventListener('click', ()=> {
-  whoAreWeText.style.clipPath = 'circle(0.0% at 50% 50%)';
-  ourMissionText.style.clipPath = 'circle(0.0% at 50% 50%)';
-  ourStoryText.style.clipPath = 'circle(0.0% at 50% 50%)';
-  
+ourMissionCloseButton.addEventListener('click', ()=> {
+  ourMissionModal.style.display ='none'
 })
 
-ourMissionCloseBtn.addEventListener('click', ()=> {
-  whoAreWeText.style.clipPath = 'circle(0.0% at 50% 50%)';
-  ourMissionText.style.clipPath = 'circle(0.0% at 50% 50%)';
-  ourStoryText.style.clipPath = 'circle(0.0% at 50% 50%)';
-  
+//our story
+
+ourStoryButton.addEventListener('click', ()=>{
+  ourStoryModal.style.display ='block'
 })
 
-ourStoryCloseBtn.addEventListener('click', ()=> {
-  whoAreWeText.style.clipPath = 'circle(0.0% at 50% 50%)';
-  ourMissionText.style.clipPath = 'circle(0.0% at 50% 50%)';
-  ourStoryText.style.clipPath = 'circle(0.0% at 50% 50%)';
-  
+ourStoryCloseButton.addEventListener('click', ()=> {
+  ourStoryModal.style.display ='none'
 })
-
-
-
-
 
 
 

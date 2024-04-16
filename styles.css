@@ -755,22 +755,16 @@ body {
     margin-top: 150px;
   }
 
-/*who are we section*/
 
-.who-are-we-section{
-    display: flex;
-    flex-direction: column;       
-    position: relative; 
-   
-    
-    
-}
+/* INFORMATION ABOUT THE COMPANY */
 
-.who-are-we-tittle {
-    font-size: 50px;   
-    font-style: italic; 
-    margin-top: 80px;
-    margin-bottom: 50px;
+
+
+.info-tittle {
+    font-size: 50px;    
+    font-style: italic;
+    font-weight: 800;  
+    margin-bottom: 200px;
     color: #ff7b00;
     background-image: linear-gradient(to right, #ff6600, #ffa600);
     background-clip: text;
@@ -779,132 +773,136 @@ body {
     text-align: center;
 }
 
-
-.who-are-we-container{
-    display: flex;
+.info-logo-buttons{
+    display: flex;    
     align-items: center;
-    gap: 100px;
-}
-
-
-
-.who-are-we-cards-container{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    
-    
-}
-
-.who-are-we-section-cards {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 10px 20px 10px;
-    height: 0;
-    overflow: hidden;
-    border: 4px #ff7b10;
-    background-color: #000000dc;
-    border-radius: 6px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    border-radius: 8px; 
-    transition: all 0.3s ease; 
-    transition: clip-path .5s ease;
-    clip-path: circle(0.0% at 50% 50%);
-       
-    
-}
-
-.close-button{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: transparent;
-    border: none;
-    color: #ff7b10;
-    font-size: 15px;    
-    cursor: pointer;
-}
-
-.close-button:hover {
-    transform: rotate(180deg); 
-    transition: transform .3s ease; 
-}
-
-
-.section-subtittle {
-    font-size: 50px; 
-    color: #ff6600; 
-    background-image: linear-gradient(to right, #ff6600, #ffa600);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 100%;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-top: 10px;
-}
-
-.who-are-we-card-text{
-    margin: 10px;
-    padding: 10px;    
-    color: rgb(0, 0, 0);
-    background-color: #ffffff;
-    font-size: 20px;
-    text-align: justify; 
-    border-radius: 8px;
-    margin: auto;
-    width: 90%; 
-    max-width:800px; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-bottom: 100px;
 }
 
 
 
 
-.section-logo-buttons{    
-    display: flex;  
-    justify-content: center;    
-    gap: 60px;
-    margin-top: 150px;
-    margin-bottom: 50px;
+
+.info-logo-buttons img{
+    height: 120px;
 }
 
-.section-logo-buttons img {    
-    height: 150px;
-}
-
-.section-buttons{
+.info-buttons{
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #ffffff;
-    font-size: 30px;    
-    background: none;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
+    font-size: 40px;  
     transition: all ease 300ms;
+}
+
+.info-buttons:hover{
+    transform: scale(1.25);
+}
+
+
+
+.modal {
+    
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo-overlay-top-left-modal{
+    z-index: 0;
+    bottom: -23px;
+    right: -206px;
+}
+
+
+
+.who-are-we-modal{
+    display: none;
+}
+
+.our-mision-modal{
+    display: none;
+}
+
+.our-story-modal{
+    display: none;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 30px 30px 0 0 ;
+    
+    
+    object-fit: contain;
+}
+
+.modal-content h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+
+.text-picture{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    position: relative;
     
     
 }
 
-.section-buttons:hover {
-    transform: scale(1.2); 
+.text-picture img{
+    width: 40%;
+    max-height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-text{
+    z-index: 1;
+    font-size: 20px;
+    text-align: justify;
     
 }
 
-.section-buttons:focus {
-    outline: none; 
+.close {
+    position: absolute;
+    color: #aaa;
+    right: -0px;
+    top: -80px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
-.who-are-we-buttons{
-    margin-top: 120px;
-}
 
-.logo-who-are-we-section{
-    height: auto;
-    max-height: 50px;
-}
 
 
 
@@ -1581,6 +1579,10 @@ body {
         cursor: pointer;
     }
 
+
+
+
+
     /* galery*/
 
     .gallery {
@@ -1593,42 +1595,42 @@ body {
         margin: 20px 0; 
     }
 
-    /* who are we */
+    /* COMPANY INFO */
 
-    .who-are-we-tittle {
+    
+
+    .info-tittle {
         font-size: 30px; 
         margin-bottom: 50px; 
     }
-
-    .who-are-we-container {
+    
+    .info-logo-buttons {
+        display: flex;
         flex-direction: column;
-        gap: 30px;
-      }
-    
-      .section-logo-buttons {
-        flex-direction: column;
-        gap: 30px;
-        margin-top: 30px;
-        text-align: center;
-      }
-    
-      .section-logo-buttons img {
-        height: 100px;
-      }
-    
-      .who-are-we-cards-container {
         align-items: center;
-      }
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px; 
+        margin-bottom: 50px; 
+    }
     
-      .section-subtittle {
-        margin-left: 0;
-      }
-    
-      .who-are-we-card-text {
-        width: 90%;
-        max-width: unset;
-      }
+    .info-logo-buttons img {
+        height: 80px; 
+    }
 
+    .info-buttons p {
+        font-size: 20px; 
+        margin-top: 10px;
+    }
+
+    .info-buttons img {
+        height: 90px; 
+        margin-right: 10px; 
+    }
+   
+
+
+   
       /* meet the broker */
 
       .meet-the-broker-tittle {
