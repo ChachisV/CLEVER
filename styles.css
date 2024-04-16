@@ -818,6 +818,7 @@ body {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
 }
 
 .logo-overlay-top-left-modal{
