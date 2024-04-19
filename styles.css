@@ -221,7 +221,76 @@ body {
 }
 
 
+/*BOTON FLOTANTE*/
 
+.contact-check {
+    display: none;
+}
+
+.contact-button{
+    z-index: 1000;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.icon-mas{
+    display: block;
+    text-decoration: none;
+    background: rgb(255, 115, 0);
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    transition: all 500ms ease;
+
+}
+
+.contactos-flotante a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+    text-decoration: none;
+    background: rgb(255, 115, 0);
+    color: #fff;
+    width: 150px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    transition: all 500ms ease;
+}
+
+
+.contactos-flotante a:hover{
+    background: #fff;
+    color:  rgb(255, 115, 0);
+}
+
+.contact-check:checked~ .contactos-flotante a{
+    margin-bottom: 1px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.icon-mas{
+    cursor: pointer;
+    background:  rgb(255, 145, 0);
+    font-size: 20px;
+}
+
+.contact-check:checked~ .boton-mas .icon-mas {
+    transform: rotate(-137deg);
+    font-size: 23px;
+}
 
 
 /*secciones */
@@ -312,7 +381,7 @@ body {
     min-width: 300px;
     height: auto;
     margin-top: 180px;
-    animation: fadeIn 4s ease-in forwards;
+    animation: fadeIn 3s ease-in forwards;
 }
 
 .slogan {
@@ -323,7 +392,7 @@ body {
     overflow: hidden;
     border-right: .15em;
     white-space: nowrap;
-    animation: typing 5s steps(40, end);
+    animation: typing 3.5s steps(40, end);
 }
 
 @keyframes fadeIn {
@@ -692,6 +761,10 @@ body {
     padding: 20px;
     border-radius: 16px;
     
+  }
+
+  .selling-options{
+    background: #000000;
   }
 
   .home-worth-button{

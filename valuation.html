@@ -73,6 +73,15 @@
         <input placeholder="Phone" type="tel" id="telefono" name="telefono" required><br>
         
         <input placeholder="Email" type="email" id="correo" name="correo" required><br><br>
+
+        <input placeholder="When do you want to sell?" type="text" id="selling_time" name="selling_time" list="selling_time_options">
+        <datalist class="selling-options" id="selling_time_options">
+            <option value="Want to sell now">
+            <option value="In the next 3 months">
+            <option value="In the next 12 months">
+            <option value="Just asking">
+        </datalist>
+
         <input class="home-worth-button" type="submit" value="Send">
         <input type="hidden" name="_next" value="https://cleverhomeselling.com/thanks.html">
         <input type="hidden" name="_captcha" value="false">
