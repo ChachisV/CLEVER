@@ -162,4 +162,16 @@ ourStoryCloseButton.addEventListener('click', ()=> {
 })
 
 
+// forms buttons check
+
+const checkbox1 = document.getElementById('sms-consent');
+  const checkbox2 = document.getElementById('marketing-consent');
+  const submitButton = document.querySelector('.home-worth-button');
+
+  function toggleSubmitButton() {
+    submitButton.disabled = !(checkbox1.checked && checkbox2.checked);
+  }
+
+  checkbox1.addEventListener('change', toggleSubmitButton);
+  checkbox2.addEventListener('change', toggleSubmitButton);
 
