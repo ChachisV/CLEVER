@@ -1428,6 +1428,39 @@ body {
 }
 
 
+
+/*terms*/
+
+    
+.terms-tittle{
+    font-size: 50px;   
+    font-style: italic; 
+    margin-top: 170px;
+    margin-bottom: 50px;
+    color: #ff7b00;
+    background-image: linear-gradient(to right, #ff6600, #ffa600);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    
+    
+}
+
+.terms-subtittle{
+    margin-top: 25px;
+    font-size: 30px;
+}
+
+.terms-container li{
+    margin-top: 20px;
+}
+
+.terms-container h2{
+    margin-top: 20px;
+}
+
+
 /* responsive para dispositivos moviles */
 
 
@@ -1850,6 +1883,9 @@ body {
         width: 40%; 
     }
 
+
+
+    
 
     /* footer*/
 
