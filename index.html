@@ -533,9 +533,33 @@
                 <input placeholder="Phone" type="tel" id="telefono" name="telefono" required><br>
                 
                 <input placeholder="Email" type="email" id="correo" name="correo" required><br><br>
-                <input class="join-us-button" type="submit" value="Send">
-                <input type="hidden" name="_next" value="https://cleverhomeselling.com/thanks.html">
-                <input type="hidden" name="_captcha" value="false">
+                
+                <div class="terms-container">
+
+                    <input class="home-worth-button" type="submit" value="Send">
+                    <input type="hidden" name="_next" value="https://cleverhomeselling.com/thanks.html">
+                    <input type="hidden" name="_captcha" value="false">
+            
+                      <div class="checkbox-item">
+                        <input type="checkbox" id="sms-consent" name="sms-consent" required>
+                        <label for="sms-consent">
+                          By checking this box, you authorize CLEVER to send SMS for customer care. Message frequency varies; data rates may apply. Reply STOP to opt out or HELP to (239) 610-9885 for assistance.
+                        </label>
+                      </div>
+                    
+                      <div class="checkbox-item">
+                        <input type="checkbox" id="marketing-consent" name="marketing-consent" required>
+                        <label for="marketing-consent">
+                          I consent to receive occasional marketing text messages from CLEVER at the phone number provided. Frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
+                        </label>
+                      </div>
+                    
+                      <p class="policy-links">
+                        <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a> | 
+                        <a href="terms.html" target="_blank" rel="noopener noreferrer">Terms and conditions</a>
+                      </p>
+                    
+                  </div>
               </form>
             </div>
             <div class="join-us-image-container half">
