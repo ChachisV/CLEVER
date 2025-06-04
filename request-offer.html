@@ -67,13 +67,27 @@
       <form class="home-worth-form" action="https://formsubmit.co/cleverhomeselling@gmail.com" method="POST">    
         
         
-        <input placeholder="Name" type="text" id="nombre" name="nombre" required><br>
+        <input placeholder="Full Name" type="text" id="nombre" name="nombre" required><br>
         
         <input placeholder="Phone" type="tel" id="telefono" name="telefono" required><br>
         
-        <input placeholder="Email" type="email" id="correo" name="correo" required><br><br>
+        <input placeholder="Email" type="email" id="correo" name="correo" required><br>
 
-        <input class="coment-input" placeholder="Write a coment" type="text" id="coment" name="coment" required><br>
+        <input placeholder="Property address" type="address" id="direccion" name="direccion" required><br>
+
+        <input class="coment-input" placeholder="¿What's your asking price?" type="text" id="coment" name="coment" required><br>
+
+        <input placeholder="¿What type of offer are you looking for?" type="text" id="type-offer" name="type-offer" list="type_offer_options">
+        <datalist class="selling-options" id="type_offer_options">
+            <option value="Cash Offer">
+            <option value="Open Market">
+            <option value="Selling on Terms">
+            
+        </datalist>
+
+        <input class="coment-input" placeholder="¿Information about the Home?" type="text" id="coment" name="coment" required><br>
+
+        
 
       <div class="terms-container">
 
@@ -93,6 +107,10 @@
             <label for="marketing-consent">
               I consent to receive occasional marketing text messages from CLEVER at the phone number provided. Frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
             </label>
+          </div>
+
+          <div class="mobile-p">
+            Mobile opt-in data will not be shared with third parties for their promotional and marketing purposes.
           </div>
         
           <p class="policy-links">
